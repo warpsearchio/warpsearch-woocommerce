@@ -64,6 +64,12 @@ No. Searches are sent from your server through a REST route on your site.
 = What happens on uninstall? =
 Plugin settings and scheduled actions are removed. Documents stay in WarpSearch.
 
+== Screenshots ==
+
+1. Settings under WooCommerce > WarpSearch: connection, indexing and search options.
+2. The WarpSearch Product Search block with as-you-type results.
+3. The standard WooCommerce product search, answered by WarpSearch.
+
 == Changelog ==
 
 = 0.1.0 =

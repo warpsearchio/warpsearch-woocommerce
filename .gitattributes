@@ -3,3 +3,5 @@
 /.gitignore export-ignore
 /phpunit.xml.dist export-ignore
 /README.md export-ignore
+/.wordpress-org export-ignore
+/.github export-ignore

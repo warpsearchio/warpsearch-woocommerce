@@ -1,0 +1,21 @@
+# Publishes a tagged release to the WordPress.org plugin directory. Needs the repository secrets
+# SVN_USERNAME and SVN_PASSWORD (the WordPress.org account that owns the plugin); without them the
+# job is skipped. Listing assets come from .wordpress-org/.
+name: Deploy to WordPress.org
+on:
+  push:
+    tags: ['*']
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+    steps:
+      - uses: actions/checkout@v4
+        if: env.SVN_USERNAME != ''
+      - uses: 10up/action-wordpress-plugin-deploy@stable
+        if: env.SVN_USERNAME != ''
+        env:
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          SLUG: warpsearch-for-woocommerce
