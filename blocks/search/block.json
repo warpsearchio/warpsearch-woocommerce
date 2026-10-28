@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "warpsearch/product-search",
+  "title": "WarpSearch Product Search",
+  "category": "widgets",
+  "icon": "search",
+  "description": "A product search box with results from WarpSearch.",
+  "textdomain": "warpsearch-for-woocommerce",
+  "attributes": { "placeholder": { "type": "string", "default": "" } },
+  "supports": { "html": false, "autoRegister": true }
+}

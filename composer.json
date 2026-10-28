@@ -1,0 +1,42 @@
+{
+    "name": "warpsearch/warpsearch-for-woocommerce",
+    "description": "WarpSearch for WooCommerce: fast, relevant WooCommerce product search with as-you-type results, powered by the WarpSearch serverless search service (https://warpsearch.io).",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "keywords": [
+        "woocommerce",
+        "wordpress",
+        "wordpress-plugin",
+        "product-search",
+        "search",
+        "instant-search",
+        "ajax-search",
+        "site-search",
+        "ecommerce",
+        "elasticsearch-alternative",
+        "warpsearch"
+    ],
+    "homepage": "https://warpsearch.io/docs/integration-woocommerce",
+    "authors": [
+        {
+            "name": "WarpSearch by BigData Boutique",
+            "email": "hello@warpsearch.io",
+            "homepage": "https://warpsearch.io/"
+        }
+    ],
+    "support": {
+        "email": "hello@warpsearch.io",
+        "issues": "https://github.com/warpsearchio/warpsearch-woocommerce/issues",
+        "source": "https://github.com/warpsearchio/warpsearch-woocommerce",
+        "docs": "https://warpsearch.io/docs/integration-woocommerce"
+    },
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
